@@ -1,0 +1,938 @@
+
+body {
+  background-color: #17191b;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.background-dark {
+  background-color: #17191b;
+}
+
+.background-secondary-dark {
+  background-color: #151a1f;
+}
+
+/* header {
+  padding: 0px 150px;
+} */
+
+.logo-img {
+  width: 192px;
+  height: 69px;
+}
+
+.font-size-15 {
+  font-size: 15px;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M5 7h20M5 15h20M5 23h20" /%3E%3C/svg%3E');
+}
+.navbar-toggler.close-icon .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M5 5l20 20M5 25l20-20" /%3E%3C/svg%3E');
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.bg-video {
+  background-image: url("assets\images\Audi Headlight Technology – (HD Matrix LED Headlights and Laser Lights).mp4");
+}
+
+/* ============video css start============== */
+.video-background {
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+  width: 100vw;
+}
+
+.video-background video {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 2100px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 50%;
+}
+
+.overlay-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  z-index: 1;
+  width: 100vh;
+  font-size: 30px;
+}
+
+.hero-text {
+  font-size: 30px;
+  color: white;
+}
+
+.overlay-2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2; /* Ensure the form is visible above the video */
+  width: 40%; /* Adjust width as needed */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Add background for better visibility */
+  border-radius: 10px;
+}
+.overlay-3 {
+  position: absolute;
+  /* bottom: -15%; */
+  top: 75%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  z-index: 1;
+  /* width: 75%; */
+  height: fit-content;
+  font-size: 30px;
+  border-radius: 18px;
+}
+
+/* ============video css end============== */
+
+.dark-input {
+  background-color: #151a1f;
+  color: #e7eff2;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.dark-select {
+  background-color: #151a1f;
+  color: #e7eff2;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+
+.top-catagories-section {
+  margin-top: 300px;
+  margin-bottom: 100px;
+}
+
+.parts-card-img {
+  height: 180px;
+  width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .overlay-1 {
+    width: 50vh;
+    font-size: 14px;
+  }
+
+  .hero-text {
+    width: 50vh;
+    font-size: 16px;
+    margin-top: 100px;
+  }
+
+  .video-background {
+    height: 300px;
+    width: 100vw;
+  }
+
+  .video-background video {
+    top: 38%;
+    left: 50%;
+    width: 140vw;
+    height: auto;
+    transform: translate(-50%, -40%);
+    z-index: -1;
+  }
+
+  .overlay-2 {
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+    width: 100vh;
+    font-size: 8px;
+    margin-bottom: 45px;
+  }
+
+  .overlay-3 {
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    background-color: #17191b;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+    width: 55vh;
+    font-size: 30px;
+    border-radius: 18px;
+  }
+  .top-catagories-section {
+    margin-top: 2px;
+    margin-bottom: 50px;
+  }
+}
+
+.link-underline:hover {
+  border-bottom: 1px #fff solid;
+  transition-duration: 0.5s;
+}
+
+.button-hover:hover {
+  box-shadow: rgba(161, 161, 161, 0.2) 0px 7px 29px 0px;
+}
+
+.button-bg-hover:hover{
+  background-color: #b88f14;
+}
+
+/* -------full coverage  to features css */
+
+.feature {
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 25px auto;
+}
+
+.feature img {
+  max-width: 100%; /* Ensure the image fills the container on mobile */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* .text {
+  font-size: 14px;
+
+  margin-top: 20px;
+  padding: 0 10px;
+  text-align: center;
+} */
+
+h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #bbb;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Tablet and Desktop View (768px and up) */
+@media (min-width: 768px) {
+  .feature {
+    flex-direction: row;
+    text-align: left;
+    padding: 20px 40px;
+  }
+
+  .feature img {
+    max-width: 50%;
+    margin: 0;
+    order: 1; /* Ensure the image appears on the left side by default */
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  /* .text {
+    font-size: 17px;
+
+    margin-top: 0;
+    max-width: 50%;
+    padding-left: 40px;
+    text-align: left; 
+  } */
+
+  .feature:nth-child(even) {
+    flex-direction: row-reverse; /* Reverse layout for alternating sections */
+  }
+
+  .feature:nth-child(even) .text {
+    padding-left: 0;
+    padding-right: 40px;
+  }
+}
+
+/* Container for the animated box */
+
+/* Keyframes for the animation */
+@keyframes moveAndChangeColor {
+  0% {
+    transform: translateX(0);
+    background-color: #3498db;
+  }
+  50% {
+    transform: translateX(200px);
+    background-color: #e74c3c;
+  }
+  100% {
+    transform: translateX(0);
+    background-color: #3498db;
+  }
+}
+
+.card-icon {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: #007bff;
+}
+.card {
+  border-radius: 8px;
+  color: white;
+  background-color: #28292b;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-right: 15px; /* Add some spacing between cards */
+  flex: 1; /* Ensure cards take equal space */
+}
+.card-body {
+  text-align: center;
+  padding: 50px;
+}
+.card-title {
+  text-align: center;
+}
+.card-text {
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.card-deck {
+  display: flex;
+  padding: 25px 25px;
+  justify-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 767.98px) {
+  .card {
+    flex: 0 0 80%; /* Adjust card width to fit better on smaller screens */
+    margin-right: 10px; /* Adjust spacing between cards */
+  }
+  .card-body {
+    padding: 20px; /* Reduce padding inside cards for smaller screens */
+  }
+  .card-icon {
+    font-size: 2rem; /* Reduce icon size */
+  }
+  .card-title {
+    font-size: 1.25rem; /* Reduce title font size */
+  }
+  .card-text {
+    font-size: 0.875rem; /* Reduce text font size */
+  }
+}
+/* -------full coverage  to features css */
+
+/* -------------------shweta css------------------ */
+
+.container-shweta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 24px;
+  gap: 24px;
+}
+
+.form {
+  width: 714px;
+  padding: 24px;
+  gap: 28px;
+  background-color: #28292b;
+  border-radius: 8px;
+}
+
+.form-control,
+.form-select {
+  background-color: #151a1f;
+  color: #e7eff2;
+  border: 1px solid #444b52;
+  margin-bottom: 16px;
+  height: calc(1.5em + 0.75rem + 2px);
+  /* Ensure uniform height */
+  padding: 0.375rem 0.75rem;
+}
+
+.form-control::placeholder {
+  color: #e7eff2;
+}
+
+.form-select {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns%3D"http%3A//www.w3.org/2000/svg" viewBox%3D"0 0 4 5"%3E%3Cpath fill%3D"%23E7EFF2" d%3D"M2 0L0 2h4zm0 5L0 3h4z"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.25rem;
+}
+
+.btn-custom {
+  background-color: #e7eff2;
+  color: #28292b;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.img-container {
+  width: 656px;
+  height: 300px;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Existing styles */
+.img-container {
+  width: 656px;
+  height: 300px;
+  /* Ensure image is responsive */
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .container-shweta {
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+  }
+
+  .img-container {
+    width: 100%;
+    /* Make image container full width */
+    height: auto;
+    /* Allow height to adjust automatically */
+    margin-bottom: 24px;
+    /* Add space below the image */
+  }
+
+  .form {
+    width: 100%;
+    /* Make form full width */
+  }
+}
+
+.row {
+  margin-bottom: 16px;
+}
+
+option:nth-child(1):hover {
+  background-color: red;
+}
+
+
+.unique-form-container {
+  background-color: #28292B; /* Form background color */
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px; /* Adjusted width to make it smaller */
+  height: auto; /* Let the height adjust based on content */
+  margin: 50px auto; /* Centered the form */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.unique-form-control {
+  background-color: #151A1F; /* Field background color */
+  color: #E7EFF2; /* Field text color */
+  border: none;
+  outline: none;
+  padding: 8px; /* Reduced padding for a smaller box */
+  margin-bottom: 15px;
+  border-radius: 4px;
+  width: 90%; /* Adjusted width */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px; /* Reduced font size */
+}
+
+.unique-form-control:focus {
+  border: 1px solid #E7EFF2; /* Optional focus border */
+  box-shadow: none; /* Remove shadow on focus */
+}
+
+.unique-form-row {
+  display: flex;
+  gap: 10px; /* Reduced gap between input fields */
+}
+
+.unique-form-group {
+  flex: 1;
+}
+
+.unique-form-control.full-width {
+  width: 95%; /* Full width for the Full Name field */
+}
+
+.unique-submit-btn {
+  background-color: #E7EFF2; /* Button background */
+  color: #151A1F; /* Button text color */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 50%; /* Button spans the full width */
+  font-size: 14px; /* Reduced font size */
+  margin: 20px 0; /* Adjusted margin */
+}
+
+.unique-submit-btn:hover {
+  background-color: #D1E0E2; /* Slight hover effect */
+}
+
+h2 {
+  text-align: center;
+  color: #E7EFF2;
+  font-size: 18px; /* Reduced heading size */
+}
+
+select.unique-form-control {
+  background-color: #151A1F; /* Field background color */
+  color: #E7EFF2; /* Field text color */
+  border: none;
+  padding: 8px; /* Reduced padding */
+  border-radius: 4px;
+  width: 90%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px; /* Reduced font size */
+  appearance: none;
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"><polygon fill="%23E7EFF2" points="70,100 120,50 20,50"/></svg>') no-repeat right 10px center;
+  background-size: 12px;
+  cursor: pointer;
+}
+.unique-form-control{
+  background-color: #151A1F;
+  width: 90%;
+}
+select.unique-form-control:focus {
+  border: 1px solid #E7EFF2; /* Optional focus border */
+  background-color: #151A1F;
+}
+
+/*--------------------------myyy------------------------------  */
+/* Hide desktop form on mobile */
+@media (max-width: 768px) {
+  .desktop-form {
+    display: none;
+  }
+  
+  .continue-btn {
+    display: block; /* Show continue button on mobile */
+    background-color: #E7EFF2;
+    color: #151A1F;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Center the button on the mobile screen */
+  .continue-btn {
+    margin: 20px auto;
+    display: block;
+  }
+}
+
+/* Show desktop form and hide continue button on larger screens */
+@media (min-width: 768px) {
+  .desktop-form {
+    display: block; /* Show desktop form */
+  }
+
+  .continue-btn {
+    display: none; /* Hide continue button on desktop */
+  }
+}
+
+/* Pop-up form hidden by default */
+.popup-form-container {
+  display: none;
+}
+
+/* Show pop-up form when triggered */
+.popup-form-container.show {
+  display: block;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: #28292B;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Pop-up form close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #E7EFF2;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #D1E0E2;
+}
+
+
+/*  */
+
+
+/* Styles for mobile view */
+/* Styles for mobile view */
+.overlay-4 {
+  position: relative;
+  bottom: -25%; 
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  z-index: 1;
+  /* width: 75%; */
+  height: fit-content;
+  font-size: 30px;
+  border-radius: 18px;
+}
+.mobile-form-container {
+  display: block; /* Ensure the mobile form container is shown */
+  background-color: #28292B; /* Background color */
+  max-width: 100%; /* Ensure it does not exceed viewport width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 10px; /* Optional: Add padding for better spacing */
+  border-radius: 10px; /* Optional: Round corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow */
+}
+
+.container {
+  width: 100%; /* Ensure container uses full available width */
+  max-width: none; /* Remove max-width if applied */
+}
+
+.row {
+  display: flex; /* Flexbox to handle horizontal alignment */
+  flex-wrap: wrap; /* Ensure items wrap to the next line if needed */
+  justify-content: center; /* Center the row contents horizontally */
+}
+
+.small-field {
+  width: 250px; /* Allow field width to fit content */
+  margin: 0 5px; /* Adjust margin to create space between fields */
+}
+
+.continue-btn {
+ background-color: #E7EFF2; /* Button background */
+  color: #151A1F; /* Text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; /* Add space above the button */
+  width: 80%;
+}
+
+.continue-btn:hover {
+  background-color: #D1E0E2; /* Darker background on hover */
+}
+
+/* Hide the mobile form container on desktop */
+@media (min-width: 768px) {
+  .mobile-form-container {
+    display: none; /* Hide the mobile form container on desktop */
+  }
+}
+
+
+/* -----------------------------------popup------------- */
+.popup-form-container {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #28292B;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  color: #E7EFF2;
+}
+
+.close-btn:hover {
+  color: #D1E0E2;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.dark-select {
+  width: 100%;
+  padding: 10px;
+  background-color: #151A1F;
+  color: #E7EFF2;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+.continue-btn {
+  background-color: #E7EFF2;
+  color: #151A1F;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+}
+
+.continue-btn:hover {
+  background-color: #D1E0E2;
+}
+
+.btn-close{
+  display: flex;
+  justify-content:center;
+  
+}
+.modal-content {
+  background-color: #333; /* Set your desired background color */
+  color: white; /* Adjust text color for better visibility */
+}
+/* Decrease modal width */
+.modal-dialog {
+  max-width: 100%; /* Adjust this value as per your requirement */
+}
+
+/* Center the modal */
+.modal-dialog-centered {
+  margin: auto; /* Ensures the modal is centered */
+}
+
+/* footer by sarvdnya and mrumayee  */
+.input-containerfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 437px;
+  height: 50px;
+  padding: 2px;  
+  padding-left: 10px;
+  background-color: #1E2124;
+  border-radius: 26px;
+  margin-left: 60px;
+}
+
+.input-containerfooter input {
+  width: 70%;
+  height: 100%; /* Matches the container height */
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+
+.input-containerfooter input::placeholder {
+  color: #E7EFF2;
+}
+
+.input-containerfooter button {
+  display: flex;
+  height: 100%; /* Matches the container height */
+  padding: 0 24px; /* Removed top/bottom padding to match height */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 41px;
+  background-color: var(--Gray-White, #E7EFF2);
+  border: none;
+  cursor: pointer;
+}
+
+.input-containerfooter button:hover {
+  background-color: #d1dfe5; /* Slight hover effect */
+}
+
+.sidethecon{
+  margin-left: 250px;
+}
+
+
+    /* Media query for mobile responsiveness */
+    @media (max-width: 768px) {
+      .input-containerfooter {
+        width: 100%; /* Adjust width to full for mobile */
+        margin-left: 0; /* Remove margin for mobile */
+        padding: 2px 10px; /* Adjust padding */
+      }
+
+      .input-containerfooter input {
+        width: 65%; /* Adjust input width for mobile */
+        font-size: 14px; /* Reduce font size slightly */
+        text-align: center;
+        padding: 5px;
+      }
+
+      .input-containerfooter button {
+        padding: 0 16px; /* Adjust padding on button */
+        border-radius: 30px; /* Slightly smaller radius for mobile */
+      }
+
+      .sidethecon {
+        margin-left: 0; /* Reset margin for mobile */
+      }
+    }
+
+    /* Additional styles for smaller mobile devices */
+    @media (max-width: 480px) {
+      .input-containerfooter {
+        flex-direction: column; /* Stack input and button vertically on small screens */
+        height: auto; /* Adjust height */
+      }
+
+      .input-containerfooter input, .input-containerfooter button {
+        width: 100%; /* Full width for input and button */
+        margin-bottom: 10px; /* Add spacing between input and button */
+      }
+
+      .input-containerfooter button {
+        height: 44px; /* Adjust button height */
+      }
+    }
+
+    /* call css added by yash */
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f3640;
+}
+
+i {
+  color: white;
+  font-size: 2 rem;
+  transform: rotate(90deg);
+}
+
+.pulse {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #44bd32;
+  background-image: radial-gradient(hsl(112, 58%, 40%), hsl(112, 58%, 47%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.pulse::before,
+.pulse::after {
+  content: "";
+  position: absolute;
+  width: calc(100%);
+  height: calc(100%);
+  border-radius: 50%;
+  border: 2px solid #44bd32;
+  animation: calling 2s ease-in-out infinite;
+}
+
+.pulse::after {
+  animation: calling 2s ease-in-out 0.35s infinite;
+}
+
+@keyframes calling {
+  0% {
+    width: calc(100%);
+    height: calc(100%);
+    opacity: 1;
+  }
+  100% {
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    opacity: 0;
+  }
+}
